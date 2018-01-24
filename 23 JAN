@@ -88,3 +88,208 @@ print(len(daa))
 print(daa[0:8])
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7
+1...
+##Will the following lines of code print the same thing? Explain why or why not.
+x = 6 //this only defined int 6 value x is 6 
+print(6) //this value print int 6 number
+print("6")//this statement is string 6 number
+
+the first 2 is integer value and last one is string because of "6".
+
+2...
+##Will the following lines of code print the same thing? Explain why or why not.
+x = 7 . #define x value is 7
+print(x) # print value of x is 7
+print("x") # print value in string x
+
+last value is different first 2 integer value 6 and last is string "x"
+
+3.... 
+What is wrong with the following statement that attempts to assign the value ten to 
+variable x?
+10 = x
+ans:
+10 is not variable name and variable will not start with number,special character or sign
+
+4.....
+In Python can you assign more than one variable in a single statement?
+
+yes,we can assign more than one variable convert to tuple
+
+5.....
+What is the difference between the following two strings? ’n’ and ’\n’?
+'n'- this print as n
+'/n' -\n represents a eacape a new line in statement..
+.\n was automatically put in the output, where we pressed Enter.
+
+6....
+Write a Python program containing exactly one print statement that produces the  
+following output :­  
+A 
+B 
+C 
+D 
+E 
+F
+
+code:
+A="ABCDEF"
+print(A)
+B=len(A)
+for i in range(B):
+    print(A[i])
+
+7.....
+Given the following Assignments :­   
+x = 2 
+Indicate what each of the following Python statements would print.
+
+(a) print("x") // x is printed because its string..
+(b) print(’x’) x is printed because its string..
+(c) print(x) //2 is printed bcz x=2 
+(d) print("x + 1") //x + 1 is printed because its string its in double quatation..
+(e) print(’x’ + 1) //error x is string and 1 is integer 
+(f) print(x + 1) // print 3 addition of 2 and 1
+
+8......
+
+Consider the following program that attempts to compute the circumference of a  
+circle given the radius entered by the user. Given a circle’s radius, r, the circle’s  
+circumference, C is given by the formula:  C = 2 r
+
+
+r = 0 
+PI = 3.14159 
+# Formula for the area of a circle given its radius 
+C = 2*PI*r 
+# Get the radius from the user 
+r = eval(input("Please enter the circle's radius: ") 
+# Print the circumference 
+print("Circumference is", C)
+
+(a) The program does not produce the intended result. Why? 
+(b) How can it be repaired so that it works correctly?
+
+9........
+
+How many asterisks does the following code fragment print? 
+a = 0 
+while a < 100: 
+print('*', end='') 
+a += 1 
+print()
+
+ans:
+99
+
+10........
+
+Write a line of code that prompts the user for his or her name and saves the user’s 
+input in a variable called name
+
+name=input("enter the name of persons")
+print("name :",name)
+
+11......
+Write and test a program that accepts the user’s name (as text) and age (as a 
+number) as input. The program should output a sentence containing the user’s name 
+and age.
+
+ans:
+name=input("enter your name")
+age=int(input("enter the age:"))
+print("hii....your name is :",name, "and your age is :",age)
+
+12.......
+Let the variable x be “dog” and the variable y be “cat” . Write the values returned by 
+the following operations:
+
+x="Dog"
+y="Cat"
+
+##a. x + y
+
+print(x+y)
+
+##b. “the “ + x + “ chases the “ + y
+
+print("the",x,"chases the",y)
+
+##c. x * 4
+
+print(x*4)
+
+output:
+
+DogCat
+the Dog chases the Cat
+DogDogDogDog
+
+13.........
+Which of the following are valid variable names? 
+a. length 
+b. _width 
+c. firstBase 
+d. 2MoreToGo 
+e. halt!
+
+ans:c(firstBase)
+
+14........
+Assume that the variable data refers to the list [5, 3, 7] . Write the values of the 
+following expressions: 
+a) data[2] :-. 7
+
+b) data[­1] :-. 3
+
+c) len(data) :--- 3
+
+d) data[0:2] :=== 5,3,7
+
+e) 0 in data :=== 5
+
+f) data + [2, 10, 5] :==. [5,3,7,2,10,5]
+
+g) tuple(data):====(5,3,7)
+
+15.........
+Write a Python program to construct the following pattern, using a nested for loop. 
+*  
+* *  
+* * *  
+* * * *  
+* * * * *  
+* * * *  
+* * *  
+* *  
+*
+for i in range(1,6):
+       for j in range(1,i+1):
+            print("*",end="")
+       print("")
+for k in range(6,1,-1):
+      for p in range(1,k+1):
+            print("*",end="")
+      print("")
+        
+    
+
+16........
+
+Write a Python program to construct the following pattern :­ 
+1 
+22 
+333 
+4444 
+55555 
+666666 
+7777777 
+88888888 
+999999999
+
+code:
+for i in range(1,10):
+    for j in range(1,i+1):
+        print(i,end="")
+    print("")
+        
